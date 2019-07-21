@@ -1,11 +1,1 @@
-lo0
-gif0
-stf0
-en0
-en1
-en4
-en3
-bridge0
-p2p0
-awdl0
-utun0
+ifconfig -a | grep -v '^	' | cut -d ':' -f1
