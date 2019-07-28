@@ -1,0 +1,1 @@
+sudo route get default | grep "gateway"
