@@ -1,0 +1,24 @@
+#!/bin/bash
+executable_path=$1
+tdd_path=$2
+
+if [ $# = 2 ]
+then
+    test_count=$(wc -l $tdd_path | cut -d ' ' -f1)
+
+    for i in $(seq 1 $test_count)
+    do
+        echo -n "Test $i: "
+        test=$(cat $tdd_path | sed -n ${i}p)
+        arg_count=$(cat $tdd_path | sed -n ${i}p | grep -o ":" | wc -l)
+        ((arg_count++))
+        for j in $(seq 1 $arg_count)
+        do
+            arg[$j]=$(cat $tdd_path | sed -n ${i}p | cut -d ':' -f${j})
+        done
+        $executable_path "${arg[@]}"
+        unset arg[@]
+    done
+else
+    echo -e "usage: ./tdd.sh executable_path tdd_path\n"
+fi
