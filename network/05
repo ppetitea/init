@@ -1,1 +1,1 @@
-host slash16.org
+nslookup slash16.org | sed -n 2p | awk '{printf $2}'

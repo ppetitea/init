@@ -1,1 +1,1 @@
-arp -a | cut -d ' ' -f2 | tr -d '()'
+arp -a | grep "10.11." | cut -d ' ' -f2 | tr -d '()'
