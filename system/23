@@ -1,1 +1,2 @@
-ssh username@host for cli and use vnc for graphic
+ssh <username>@<host> for cli
+ssh -X <username>@<host> for graphic

@@ -1,1 +1,1 @@
-cat /etc/passwd | grep "bash"
+getent passwd {1000..6000}
