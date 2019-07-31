@@ -1,1 +1,5 @@
+#Listez tout les utilisateurs réels de la machine
+
 getent passwd {1000..6000}
+
+#getent	->	The getent command displays entries from databases

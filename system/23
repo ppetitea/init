@@ -1,2 +1,4 @@
+#Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)
+
 ssh <username>@<host> for cli
-ssh -X <username>@<host> for graphic
+use VNC for graphic

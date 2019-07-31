@@ -1,1 +1,5 @@
+#Récupérez la liste des interfaces réseau de la machine sans afficher aucun détail pour ces interfaces. Vraiment juste la liste des noms.
+
 ifconfig -l
+#ifconfig	-> (Interface Configuration) permet de configurer les interfaces réseau de la machine.
+#	-l		-> The -l flag may be used to list all available interfaces on the system, with no other additional information.

@@ -1,1 +1,3 @@
-/etc/init.d/ssh stop
+#Donnez une commande qui permet d’arrêter le service ssh
+
+sudo /etc/init.d/ssh stop

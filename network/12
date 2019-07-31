@@ -1,1 +1,9 @@
+#Trouvez l’IP qui vous a été assignée par le serveur dhcp
+
 ifconfig en0 | grep "inet " | cut -d " " -f2
+
+#ifconfig		->	(Interface Configuration) permet de configurer les interfaces réseau de la machine.
+#	en0			->	Designe l'interface Ethernet
+#grep 'inet '	->	Affiche seulement les lignes qui contiennent le mot inet
+#cut -d ' ' -f2	->	Afiche le 2eme champs de chaque ligne avec un espace ' ' comme separateur
+#dhcp			-> Dynamic Host Configuration Protocol, est un protocole TCP/IP qui permet de distribuer automatiquement une configuration IP aux équipements du réseau, lors de chaque mise en service. 

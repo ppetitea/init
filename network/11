@@ -1,0 +1,5 @@
+#Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel qui fait le lien entre vous (réseau local) et l’extérieur
+
+Le materiel est le serveur NAT son ip est :	nat-1 (10.60.1.11)
+
+#NAT	-> (Network Address Translation) assigns a public address to a computer inside a private network.

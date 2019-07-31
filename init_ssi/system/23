@@ -1,2 +1,0 @@
-Pour se connecter en tant que ce nouvelle utilisateur en session graphique : ssh -X <username>@<ipadress>
-Pour se connecter en tant que ce nouvelle utilisateur en session ssh : ssh <username>@<ipadress>

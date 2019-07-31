@@ -1,1 +1,3 @@
-ssh <username>@<host> example "robert@10.0.2.15"
+# Trouvez une commande qui, en parallèle de la session graphique, permet de se connecter en ssh sur la machine
+
+ssh <username>@<host>

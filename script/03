@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+#Réalise un script de ton choix. La qualité de ton script, devant ton évaluateur tu soutiendras.
+
 executable_path=$1
 tdd_path=$2
 

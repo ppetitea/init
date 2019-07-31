@@ -1,1 +1,7 @@
+#Identifiez l’IP du serveur DNS qui répond sur le domaine suivant : slash16.org
+
 nslookup slash16.org | sed -n 2p | awk '{printf $2}'
+
+#nslookup			->	to lookup and find IP address information of Domain Name Server
+#sed -n 2p			->	Affiche seulement la 2eme ligne
+#awk '{printf $2}'	->	Affiche seulement le 2eme champs

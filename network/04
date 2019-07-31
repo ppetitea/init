@@ -1,1 +1,8 @@
-route get default | grep "gateway"
+#Identifiez la gateway par défaut dans la table de routage
+
+route get default | grep 'gateway'
+
+#route			->	used to manually manipulate the network routing tables.
+#	get			->	lookup and display the route for a destination.
+#	default		->	select the default destination
+#grep 'gateway'	->	Affiche seulement les lignes qui contiennent le mot gateway

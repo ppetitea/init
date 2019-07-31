@@ -1,1 +1,8 @@
-ifconfig en1 | grep ether | cut -d " " -f2
+#Identifiez l’adresse MAC de la carte Wi-Fi
+
+ifconfig en1 | grep 'ether' | cut -d " " -f2
+
+#ifconfig			->	(Interface Configuration) permet de configurer les interfaces réseau de la machine.
+#	en1				->	Designe l'interface Wi-Fi
+#grep 'ether'		->	Affiche seulement les lignes qui contiennent le mot ether
+#cut -d ' ' -f2		->	Afiche le 2eme champs de chaque ligne avec un espace ' ' comme separateur
