@@ -1,1 +1,1 @@
-ssh username@host example 10.0.2.15
+ssh <username>@<host> example "robert@10.0.2.15"

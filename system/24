@@ -1,1 +1,1 @@
-pkg --list
+dpkg --get-selections
