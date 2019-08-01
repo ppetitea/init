@@ -22,5 +22,5 @@ then
         unset arg[@]
     done
 else
-    echo -e "usage: ./tdd.sh executable_path tdd_path\n"
+    echo "usage: ./tdd.sh executable_path tdd_path\n"
 fi
