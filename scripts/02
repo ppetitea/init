@@ -4,7 +4,7 @@
 if [ $# = 1 ]
 then
 	sudo pkill -u $1
-	sudo userdel -r $1
+	sudo userdel $1
 else
 	echo "usage: ./script.sh <username>"
 fi

@@ -11,10 +11,4 @@ ifconfig en0 | grep 'broadcast' | cut -d ' ' -f6
 
 #	(b) Indiquez toutes les adresses IP qui font partie du même sous-réseau
 
-arp -a | grep "10.11." | cut -d ' ' -f2 | tr -d '()'
-
-#arp				->	permet de manipuler la table ARP (mac_adress <-> ip_adress)
-#	-a				->	Affiche les entrées concernant l'hôte spécifié. Si le paramètre nom_d_hôte n'est pas utilisé, toutes les entrées seront affichées.
-#grep '10.11'		->	Affiche seulement les lignes qui contiennent le mot 10.11
-#cut -d ' ' -f2		->	Afiche le 2eme champs de chaque ligne avec un espace ' ' comme separateur
-#tr -d '()'			->	Supprime les parentheses
+ping 10.11.255.255 -c 2
